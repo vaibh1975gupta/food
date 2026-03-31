@@ -1,99 +1,206 @@
-.cart-container{
-  padding:40px;
-  max-width:900px;
-  margin:auto;
+.cart-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.cart-title{
-  font-size:28px;
-  margin-bottom:25px;
+.cart-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
-.cart-item{
-  display:flex;
-  align-items:center;
-  gap:20px;
-  padding:15px;
-  margin-bottom:15px;
-  background:white;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  flex-wrap:wrap;
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
-.cart-item img{
-  width:80px;
-  height:80px;
-  object-fit:cover;
-  border-radius:8px;
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.cart-details{
-  flex:1;
+.cart-details {
+  flex: 1;
+  min-width: 180px;
 }
 
-.cart-details h3{
-  margin:0;
-  font-size:18px;
+.cart-details h3 {
+  margin: 0;
+  font-size: 18px;
 }
 
-.cart-details p{
-  margin-top:5px;
-  color:#555;
-  font-weight:bold;
+.cart-details p {
+  margin-top: 5px;
+  color: #555;
+  font-weight: bold;
 }
 
-.cart-quantity{
-  display:flex;
-  align-items:center;
-  gap:10px;
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.cart-quantity button{
-  width:32px;
-  height:32px;
-  border:none;
-  background:#ff4d4d;
-  color:white;
-  border-radius:5px;
-  cursor:pointer;
-  font-size:18px;
+.cart-quantity button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
 }
 
-.cart-quantity button:hover{
-  background:#e63939;
+.cart-quantity button:hover {
+  background: #e63939;
 }
 
-.remove-btn{
-  padding:8px 12px;
-  background:red;
-  color:white;
-  border:none;
-  border-radius:5px;
-  cursor:pointer;
+.remove-btn {
+  padding: 8px 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.remove-btn:hover{
-  background:darkred;
+.remove-btn:hover {
+  background: darkred;
 }
 
-.cart-total{
-  margin-top:20px;
-  font-size:24px;
-  font-weight:bold;
-  text-align:right;
-}
-.checkout-btn{
-  margin-top:20px;
-  padding:12px 20px;
-  border:none;
-  background:#28a745;
-  color:white;
-  border-radius:6px;
-  cursor:pointer;
-  font-size:16px;
+.cart-total {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
 }
 
-.checkout-btn:hover{
-  background:#218838;
+.checkout-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: #218838;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 30px 15px;
+  }
+
+  .cart-title {
+    font-size: 24px;
+  }
+
+  .cart-item {
+    gap: 15px;
+    padding: 14px;
+  }
+
+  .cart-details h3 {
+    font-size: 17px;
+  }
+
+  .cart-total {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 20px 12px;
+  }
+
+  .cart-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .cart-item img {
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+  }
+
+  .cart-details {
+    width: 100%;
+  }
+
+  .cart-details h3 {
+    font-size: 16px;
+  }
+
+  .cart-details p {
+    font-size: 14px;
+  }
+
+  .cart-quantity {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .remove-btn,
+  .checkout-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cart-total {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+  .cart-title {
+    font-size: 20px;
+  }
+
+  .cart-details h3 {
+    font-size: 15px;
+  }
+
+  .cart-details p,
+  .cart-total {
+    font-size: 14px;
+  }
+
+  .cart-quantity button {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
 }

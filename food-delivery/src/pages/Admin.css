@@ -1,31 +1,113 @@
-.admin-container{
-padding:40px;
-max-width:500px;
-margin:auto;
+.admin-container {
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: auto;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.admin-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-margin-top:20px;
+.admin-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.admin-form input{
-padding:10px;
-border:1px solid #ccc;
-border-radius:6px;
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.admin-form button{
-padding:12px;
-border:none;
-background:#ff4d4d;
-color:white;
-border-radius:6px;
-cursor:pointer;
+.admin-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
 }
 
-.admin-form button:hover{
-background:#e63939;
+.admin-form input:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.15);
+}
+
+.admin-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.admin-form button:hover {
+  background: #e63939;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 30px 15px;
+  }
+
+  .admin-container h2 {
+    font-size: 24px;
+  }
+
+  .admin-form {
+    padding: 20px;
+  }
+
+  .admin-form input,
+  .admin-form button {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .admin-container {
+    padding: 20px 12px;
+  }
+
+  .admin-container h2 {
+    font-size: 22px;
+  }
+
+  .admin-form {
+    padding: 16px;
+    gap: 12px;
+    border-radius: 10px;
+  }
+
+  .admin-form input,
+  .admin-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+  .admin-container h2 {
+    font-size: 20px;
+  }
+
+  .admin-form {
+    padding: 14px;
+  }
+
+  .admin-form input,
+  .admin-form button {
+    font-size: 13px;
+  }
 }
