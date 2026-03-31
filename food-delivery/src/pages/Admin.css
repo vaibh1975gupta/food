@@ -1,0 +1,31 @@
+.admin-container{
+padding:40px;
+max-width:500px;
+margin:auto;
+}
+
+.admin-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+.admin-form input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.admin-form button{
+padding:12px;
+border:none;
+background:#ff4d4d;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+.admin-form button:hover{
+background:#e63939;
+}

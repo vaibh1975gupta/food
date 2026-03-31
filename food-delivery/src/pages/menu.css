@@ -1,0 +1,17 @@
+.menu{
+padding:40px;
+}
+
+.search{
+padding:10px;
+width:250px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.food-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
