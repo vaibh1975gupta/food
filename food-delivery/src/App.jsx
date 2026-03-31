@@ -7,7 +7,7 @@ import Login from "./pages/login.jsx";
 import Register from "./pages/register.jsx";
 import Checkout from "./pages/checkout.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
-import Admin from "./pages/Admin";
+import Admin from "./pages/Admin.jsx";
 import AdminOrders from "./pages/AdminOrders.jsx";
 import MyOrders from "./pages/MyOrders.jsx";
 import "./App.css";
