@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../utils/api";
-import "./adminOrders.css";
+import "./adminorders.css";
 
 function AdminOrders() {
   const [orders, setOrders] = useState([]);

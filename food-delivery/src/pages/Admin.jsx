@@ -1,6 +1,6 @@
 import { useState } from "react";
 import API from "../utils/api";
-import "./admin.css";
+import "./Admin.css";
 
 function Admin() {
 
